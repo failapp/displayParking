@@ -55,14 +55,14 @@ public class GpioControl implements Runnable {
             int resetMin  = Integer.parseInt(arr[1]);
 
 
-            System.out.println("resetHour -> " + resetHour + " - LocalTime.now().getHour() " + LocalTime.now().getHour());
-            System.out.println("resetMin -> " + resetMin + " - LocalTime.now().getMinute() " + LocalTime.now().getMinute());
+            //System.out.println("resetHour -> " + resetHour + " - LocalTime.now().getHour() " + LocalTime.now().getHour());
+            //System.out.println("resetMin -> " + resetMin + " - LocalTime.now().getMinute() " + LocalTime.now().getMinute());
 
 
             _display = _displayService.fetchDisplay(ipAddr, tcpPort);
             //System.out.println("INIT SERVICE .. DISPLAY LCD -> " + _display);
 
-            System.out.println("SERVICIO CONTROL ESTACIONAMIENTO - RETARDO INICIO -> " + initDelay + " ms .." );
+            //System.out.println("SERVICIO CONTROL ESTACIONAMIENTO - RETARDO INICIO -> " + initDelay + " ms .." );
             Util.sleep( Integer.parseInt(initDelay) / 1000 );
 
             _displayService.setDisplay(_display);
